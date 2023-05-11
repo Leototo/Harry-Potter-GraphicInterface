@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hpgraph.HelloController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../Images/pngtree-grunge-parchment-paper-background-picture-image_1181720.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="146.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click here to create your wizard : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="110.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step into the magical world of Harry Potter At Home, where you'll have the chance to become a skilled wizard and embark on an incredible adventure. As a student at Hogwarts, you'll face a series of challenges and obstacles that will test your courage, wit, and magical abilities.From battling the fearsome Troll in the bathroom to facing off against the Dark Lord himself, you'll need to master a variety of spells and skills to pass each level. Along the way, you'll attend classes, interact with characters from the Harry Potter saga, and explore different areas of the wizarding world, including Diagon Alley and the Forbidden Forest.Whether you're a die-hard Harry Potter fan or simply looking for a magical gaming experience, Harry Potter At Home has something for everyone. Choose your Hogwarts house, hone your magical skills, and prepare to immerse yourself in a world full of wonders, mysteries, and dangers.Are you ready to become a skilled wizard and prove yourself at Hogwarts? The adventure awaits!" wrappingWidth="393.47010040283203">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="334.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Create" />
+   </children>
+</AnchorPane>
