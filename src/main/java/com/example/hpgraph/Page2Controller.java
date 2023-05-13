@@ -26,23 +26,21 @@ public class Page2Controller {
     }
 
 
-    ObservableList<String> maritalStatusList = FXCollections.observableArrayList("Rat", "Toad", "Owl");
+    ObservableList<String> maritalStatusList = FXCollections.observableArrayList("Rat", "Toad", "Owl","Cat","Dog","Frog","Eagle");
     @FXML
     private ChoiceBox maritalStatusBox;
 
     @FXML
     private void initialize() {
-        maritalStatusBox.setValue("Rat");
         maritalStatusBox.setItems(maritalStatusList);
 
     }
-    ObservableList<String> StatusList = FXCollections.observableArrayList("Phoenix_Feather", "Dragon_heartstring", "Owl");
+    ObservableList<String> StatusList = FXCollections.observableArrayList("Phoenix_Feather", "Dragon_Heartstring", "Unicorn_Hair","Dittany");
     @FXML
     private ChoiceBox StatusBox;
 
     @FXML
     private void initialize1() {
-        StatusBox.setValue("Rat");
         StatusBox.setItems(StatusList);
 
     }

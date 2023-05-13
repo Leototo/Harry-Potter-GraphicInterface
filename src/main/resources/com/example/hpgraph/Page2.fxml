@@ -30,7 +30,7 @@
          </font>
       </Text>
       <TextField layoutX="255.0" layoutY="81.0" />
-      <Text layoutX="19.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a pet from the following list : ">
+      <Text layoutX="14.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a pet from the following list : ">
          <font>
             <Font size="14.0" />
          </font>
@@ -53,12 +53,13 @@
          <items>
             <FXCollections fx:factory="observableArrayList">
                <String fx:value="Phoenix_Feather" />
-               <String fx:value="Dragon_heartString" />
-               <String fx:value="Toad" />
+               <String fx:value="Dragon_HeartString" />
+               <String fx:value="Unicorn_Hair" />
+               <String fx:value="Dittany" />
             </FXCollections>
          </items>
       </ChoiceBox>
-      <Text layoutX="67.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a size for your wand :">
+      <Text layoutX="36.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a size for your wand (cm) :">
          <font>
             <Font size="14.0" />
          </font>

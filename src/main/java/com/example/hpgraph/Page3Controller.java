@@ -19,7 +19,7 @@ public class Page3Controller {
 
     @FXML
     private void start(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Page5.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Page4.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root, 600, 400);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -28,7 +28,6 @@ public class Page3Controller {
     }
     @FXML
     private void displayHouse(ActionEvent event) {
-        // Randomly select a house
         String[] houses = {"Ravenclaw", "Hufflepuff", "Gryffindor", "Slytherin"};
         int randomIndex = new Random().nextInt(houses.length);
         String selectedHouse = houses[randomIndex];

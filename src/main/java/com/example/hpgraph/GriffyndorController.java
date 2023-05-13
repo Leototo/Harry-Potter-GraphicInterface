@@ -13,12 +13,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Random;
 
-public class Page4Controller {
+public class GriffyndorController {
 
     private int sorcererHP = 100;
-    private int trollHP = 100;
+    private int basilicHP = 100;
     private boolean sorcererDefending = false;
-    private boolean trollDefending = false;
+    private boolean basilicDefending = false;
     private boolean defendButtonDisabled = false;
 
     private Random random = new Random();
@@ -39,13 +39,13 @@ public class Page4Controller {
     private Text sorcererHPText;
 
     @FXML
-    private Text trollHPText;
+    private Text basilicHPText;
 
     @FXML
     public void initialize() {
         updateHPTexts();
 
-        statusText.setText("Your wizard encounters an horrible troll !!");
+        statusText.setText("Your wizard encounters the basilic !!");
         statusText.setFont(Font.font("System", FontWeight.BOLD, 14));
 
         attackButton.setOnAction(event -> handleAttackButton());
@@ -56,12 +56,12 @@ public class Page4Controller {
 
     private void updateHPTexts() {
         sorcererHPText.setText("Wizard HP: " + sorcererHP);
-        trollHPText.setText("Troll HP: " + trollHP);
+        basilicHPText.setText("Basilic HP: " + basilicHP);
     }
 
     private void checkForEndGame() {
         if (sorcererHP <= 0) {
-            statusText.setText("Troll wins!");
+            statusText.setText("Basilic wins!");
             attackButton.setDisable(true);
             defendButton.setDisable(true);
             try {
@@ -73,7 +73,7 @@ public class Page4Controller {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } else if (trollHP <= 0) {
+        } else if (basilicHP <= 0) {
             statusText.setText("You win! Congratulations ! ");
             attackButton.setDisable(true);
             defendButton.setDisable(true);
@@ -81,7 +81,7 @@ public class Page4Controller {
         }
     }
 
-    private void trollAttacks() {
+    private void basilicAttacks() {
         if (random.nextDouble() < 0.5) {
             int damage = 20;
             if (sorcererDefending) {
@@ -89,9 +89,9 @@ public class Page4Controller {
                 sorcererDefending = false;
             }
             sorcererHP -= damage;
-            statusText.setText(statusText.getText() + "\nTroll hits with his mass! you take " + damage + " damage.");
+            statusText.setText(statusText.getText() + "\nBasilic bite you ! you take " + damage + " damage.");
         } else {
-            statusText.setText(statusText.getText() + "\nTroll misses.");
+            statusText.setText(statusText.getText() + "\nBasilic misses.");
         }
 
         updateHPTexts();
@@ -100,15 +100,15 @@ public class Page4Controller {
 
     @FXML
     public void handleAttackButton() {
-        if (random.nextDouble() < 0.8) {
-            trollHP -= 20;
-            statusText.setText("Wizard casts Leviosa! Troll takes 20 damage.");
+        if (random.nextDouble() < 0.9) {
+            basilicHP -= 40;
+            statusText.setText("Wizard attack with griffyndor sword! Basilic takes 20 damage.");
         } else {
-            statusText.setText("Wizard misses Leviosa.");
+            statusText.setText("Wizard misses his hit.");
         }
 
         sorcererDefending = false;
-        trollAttacks();
+        basilicAttacks();
 
         checkForEndGame();
     }
@@ -119,7 +119,7 @@ public class Page4Controller {
             sorcererDefending = true;
             sorcererHP += 20;
             statusText.setText("Wizard drinks a health potion and gains 20 HP.");
-            trollAttacks();
+            basilicAttacks();
             defendButtonDisabled = true;
             defendButton.setDisable(true);
             checkForEndGame();
@@ -128,7 +128,7 @@ public class Page4Controller {
     @FXML
     public void handleWinButton() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("page5.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("page7.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage) winButton.getScene().getWindow();

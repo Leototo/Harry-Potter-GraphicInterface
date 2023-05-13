@@ -12,22 +12,22 @@
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.31">
          <image>
-            <Image url="@../../../Images/téléchargement.jpg" />
+            <Image url="@../../../Images/salle.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="116.0" fitWidth="131.0" layoutY="277.0">
          <image>
-            <Image url="@../../../Images/robe-de-sorcier-gryffondor-removebg-preview.png" />
+            <Image url="@../../../Images/sorcier.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="176.0" fitWidth="217.0" layoutX="383.0" layoutY="-12.0">
          <image>
-            <Image url="@../../../Images/G_CNF_F65480866_B-removebg-preview.png" />
+            <Image url="@../../../Images/sorting.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="136.0" fitWidth="355.0" layoutX="53.0" layoutY="17.0">
          <image>
-            <Image url="@../../../Images/kisspng-dialog-box-video-game-dialogue-clip-art-game-box-5b487bccccddf0.2945552915314769408391-removebg-preview.png" />
+            <Image url="@../../../Images/text.png" />
          </image>
       </ImageView>
       <Text layoutX="72.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello young wizard, don’t be afraid. I will simply dive into the twists and turns of your mind to determine your house in Hogwarts." wrappingWidth="288.8033447265625">
@@ -37,7 +37,7 @@
       </Text>
       <ImageView fitHeight="90.0" fitWidth="305.0" layoutX="208.0" layoutY="164.0">
          <image>
-            <Image url="@../../../Images/kisspng-dialog-box-video-game-dialogue-clip-art-game-box-5b487bccccddf0.2945552915314769408391-removebg-preview.png" />
+            <Image url="@../../../Images/text.png" />
          </image>
       </ImageView>
       <Button fx:id="houseButton" layoutX="408.0" layoutY="252.0" mnemonicParsing="false" onAction="#displayHouse" text="House" />
